@@ -6,5 +6,5 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-    <link href="project.css" rel="stylesheet" />
+    <link href="res/css/project.css" rel="stylesheet" />
     <title>Hotel FH Technikum Wien</title>

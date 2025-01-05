@@ -27,7 +27,7 @@ include 'inc/daten.php';
       </div>
 
       <?php
-      require_once("dbacces.php");
+      require_once("conf/dbaccess.php");
       $db_conn = new mysqli($host, $user, $password, $dbname, $port);
 
       $sqlstatement = "select id, username, useremail, firstname, lastname, sex, role, status from users ";

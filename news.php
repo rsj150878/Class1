@@ -21,7 +21,7 @@ include 'inc/daten.php';
 
 
 
-    require_once("dbacces.php");
+    require_once("conf/dbaccess.php");
     $db_conn = new mysqli($host, $user, $password, $dbname,$port);
 
     $sqlstatement = "select id, file_path, header, comment,create_ts from news order by create_ts desc ";

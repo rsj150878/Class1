@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if (is_session_active()) {
 
   // user lesen - die daten standen beim lesen in tools.php noch nicht zur verfügung
-  require_once "dbacces.php";
+  require_once "conf/dbaccess.php";
 
   $db_conn = new mysqli($host, $user, $password, $dbname, $port);
   $sqlstatement = "select id, username, password, useremail, role, status, firstname, lastname, sex from users where username = ?";

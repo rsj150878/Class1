@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["reservation_id"])) {
         $currentID = $_POST["reservation_id"];
 
-        include "dbacces.php";
+        include "conf/dbaccess.php";
 
         $db_conn = new mysqli($host, $user, $password, $dbname, $port);
 
@@ -91,7 +91,7 @@ if (isset($_POST["Zimmerkategorie"])) {
         // Neue Reservierung hinzufügen
         // $_SESSION["reservierungen"][] = $reservierung;
 
-        include("dbacces.php");
+        include "conf/dbaccess.php";
 
         $db_conn = new mysqli($host, $user, $password, $dbname, $port);
 

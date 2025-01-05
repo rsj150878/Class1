@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $userId = $_POST["user_id"];
 
-        include("dbacces.php");
+        include("conf/dbaccess.php");
 
 
         $db_conn = new mysqli($host, $user, $password, $dbname, $port);
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             update_user($rId, $cleaned_user, $cleanedFirstName, $cleanedLastName, $rEmail, $geschlecht, $cleanedStatus);
 
-            include("dbacces.php");
+            include("conf/dbaccess.php");
             $db_conn = new mysqli($host, $user, $password, $dbname,$port);
 
             $sqlstatement = "select id, username, password, useremail, role, status, firstname, lastname, sex from users where id = ?";

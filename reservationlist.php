@@ -29,7 +29,7 @@ include 'inc/daten.php'; //$error=False; //if ($_SERVER["REQUEST_METHOD"]=="POST
             </div>
 
             <?php
-            require_once("dbacces.php");
+            require_once("conf/dbaccess.php");
             $db_conn = new mysqli($host, $user, $password, $dbname,$port);
 
             $sqlstatement = "select reservation_id, start_date, end_date, room_type, persons, rooms, 
