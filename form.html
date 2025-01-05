@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Formular test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+
+    <form action="./form.html" method="GET">
+        <table>
+            <tr>
+                <td>
+                    <label for="username">Username</label>
+                    <input name="forUserName" id="username" type="text" placeholder="Benutzername" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <label for="email">Email</label>
+                    <input name="formUserEmail" id="email" type="email" value="xyz@xyz.com" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="land">Ort</label>
+                    <select id="land" name="land">
+                    <option value="ÖSterreich">Österreich</option>
+                    <option value="Deutschland">Deutschland</option>
+
+                </select>
+                </td>
+            </tr>
+            <tr><td>
+                <label for="beschreibung">Beschreibung</label>
+                <textarea id="beschreibung" name="beschreibung"></textarea>
+            </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <input type="submit" />
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    <form action="./form.html" method="POST">
+        <label for="headline">Headline</label>
+        <input name="formHeadline" id="headline" type="text" placeholder="headline" required/>
+        <br>
+        <label for="summary">Summary</label>
+        <textarea name = "formSummary" id="summary" ></textarea>
+        <br>
+        <label for="volltext">Volltext</label>
+        <textarea id="volltext" name="formVolltext"></textarea>
+        <br>
+        <label for="picUpload">Picture</label>
+        <input name="formPicture" id ="picture" type="file">
+        <br>
+        <label for="wellness">Wellness</label>
+        <input name="formWellness" id ="wellness" type="checkbox">
+        <br>
+        <label for="Sport">Sport</label>
+        <input name="formSport" id ="sport" type="checkbox">
+        <br>
+        <label for="kultur">Kultur</label>
+        <input name="formKultur" id ="kultur" type="checkbox">
+        <br>
+        <input type="submit" />
+       
+        
+    </form>
+</body>
+
+</html>

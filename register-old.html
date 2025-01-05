@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./grid-system.css" rel="stylesheet" />
+
+    <title>Register</title>
+</head>
+<body>
+    <h1 class="col-12" >Register</h1>
+    <form    action="./register.html" method="POST">
+        <label for="Geschlecht">Geschlecht</label><br>
+        <select id="geschlecht" name="Geschlecht">
+            <option value="" disabled selected hidden>bitte wählen</option>
+        <option value="Mann">Mann</option>
+        <option value="Frau">Frau</option>
+        <option value="Divers">Divers</option>
+
+    </select> <br>
+
+
+
+
+
+    <div>  <div class="col-5">
+        <label  for="vorname">Vorname</label><br>
+        <input  name="formVorname" id="vorname" type="text"  required/>
+    </div>
+    <div class="col-5">
+        
+        <label for="nachname">Nachname</label><br>
+        <input name="formNachname" id="nachname" type="text"  required/>
+    </div>
+    <div class="col-5">
+        <label for="userid">User-Id</label><br>
+        <input name="formUserid" id="userid" type="text"  required/>
+       </div>
+
+       <div class="col-5">
+       
+        <label for="password">Password</label><br>
+        <input name = "formPassword" id="password" type="password">  </input> 
+        </div>
+        <div class="col-5">
+        <label for="password">Password wiederholen</label><br>
+        <input name = "formPassword" id="password" type="password">  </input> 
+        </div>
+       <div class="col-12">
+        <input type="submit" value="Registrierung abschicken"/>
+        </div>
+    </div>
+  </form>
+</body>
+</html>

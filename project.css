@@ -1,0 +1,17 @@
+body {
+    background-image: url(background1.jpeg);
+    /*background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  /*background-size: cover;
+  /*width: 100vw;*/
+  /*height: 100vh;*/
+  }
+
+    table {
+        table-layout: auto;
+        width: 100%;
+    }
+    td, th {
+        text-align: center; /* Zentriere alle Zellen */
+        vertical-align: middle; /* Zentriere Text vertikal */
+    }
